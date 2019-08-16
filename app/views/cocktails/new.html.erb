@@ -1,4 +1,8 @@
 <%= simple_form_for(@cocktail) do |f| %>
+
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
+
     <%= f.label :name %>
     <%= f.text_field :name %>
 
